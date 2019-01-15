@@ -788,14 +788,12 @@ body {
     padding-left: 5%;
     padding-right: 5%; }
     section h3 {
-      width: 300px;
-      border: 1px solid lawngreen; }
+      width: 300px; }
     section .mail {
-      width: 300px;
-      border: 1px solid lawngreen; }
+      width: 300px; }
     section .adress {
       width: 300px;
-      border: 1px solid lawngreen; }
+      margin-right: 80px; }
     section .dummy {
       background-color: #7cfc00;
       width: 525px;
@@ -1298,7 +1296,7 @@ body {
       height: 100%;
       width: auto; }
   .zigzag {
-    margin-top: -35px; }
+    margin-top: -34px; }
   .description {
     margin: 0;
     padding: 0;

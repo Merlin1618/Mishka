@@ -738,6 +738,7 @@ $grey-background:rgb(241, 241, 241);
       }
     }
   }
+  
 
   section {
     display: flex;
@@ -748,20 +749,21 @@ $grey-background:rgb(241, 241, 241);
 
     h3 {
       width: 300px;
-      border: 1px solid lawngreen;
+      // border: 1px solid lawngreen;
 
     }
 
     .mail {
       width: 300px;
-      border: 1px solid lawngreen;
+      // border: 1px solid lawngreen;
       // margin-left: 40px;
 
     }
 
     .adress {
       width: 300px;
-      border: 1px solid lawngreen;
+      margin-right: 80px;
+      // border: 1px solid lawngreen;
       // margin-left: 40px;
 
     }
