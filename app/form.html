@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Mishka</title>
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" type="text/css" href="Fonts/opensans.css">
+</head>
+
+<body>
+  <nav>
+    <li class="logo"><a href="index.html">
+        <picture>
+          <source srcset="img/mishka-logo-desktop.webp" media="(min-width:1200px)">
+          <source srcset="img/mishka-logo-tablet.svg.webp" media="(min-width:768px)">
+          <source srcset="img/mishka-logo-mobile.svg copy.webp" media="(min-width:320px)">
+
+          <img src="img/mishka-logo-mobile.svg copy.webp">
+        </picture>
+      </a>
+      <input type="checkbox" id="toogle" checked="checked">
+      <label class="toggle-container" for="toogle">
+        <i></i>
+        <i></i>
+        <i></i>
+      </label>
+    </li>
+    <li><a href="catalog.html">Каталог товаров</a></li>
+    <li><a href="form.html">Вязание на заказ</a></li>
+    <li>
+      <div class="search"></div><a href="">Поиск по сайту</a>
+    </li>
+    <li><a href="">Корзина: Пока пуста</a>
+      <div></div>
+    </li>
+    <li>Бесплатная доставка по России</li>
+    <li><a href=""></a>Новые поступления</li>
+    <li><a href=""></a>Распродажа</li>
+  </nav>
+  <main>
+    <div class="form_label"><span>Вязание на заказ</span></div>
+    <img src="img/Originals/zigzag-fill-desktop.png" alt="" class="curvy-line">
+    <form action="form_submit" method="get" accept-charset="utf-8">
+      <span>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы
+        уточнить детали.</span>
+
+      <div class="form_div form_div_type">
+        <div class="form_name">ТИП</div>
+        <input type="radio" name="type" id="radio1">
+        <label for="radio1"><span>Аксессуар для интерьера</span></label>
+        <input type="radio" name="type" id="radio2">
+        <label for="radio2"><span>Детская игрушка</span></label>
+      </div>
+
+      <div class="form_div form_div_color">
+        <div class="form_name">Цвет</div>
+        <input type="checkbox" id="check1"><label for="check1"><span>Белый</span></label>
+        <input type="checkbox" id="check2"><label for="check2"><span>Серый</span></label>
+        <input type="checkbox" id="check3"><label for="check3"><span>"Тиффани"</span></label>
+        <input type="checkbox" id="check4"><label for="check4"><span>Черный</span></label>
+        <input type="checkbox" id="check5"><label for="check5"><span>Розовый</span></label>
+        <input type="checkbox" id="check6"><label for="check6"><span>Оранжевый</span></label>
+      </div>
+
+      <div class="form_div form_div_name">
+        <div class="form_name">ФИО</div>
+        <label for="name">Имя:</label>
+        <input type="text" id="name" value="" placeholder="Введите ваше имя*">
+        <label for="surname">Фамилия:</label>
+        <input type="text" id="surname" value="" placeholder="Укажите фимилию*">
+        <label for="middlename">Отчество:</label>
+        <input type="text" id="middlename" value="" placeholder="Отчество, если желаете">
+      </div>
+
+      <div class="form_div form_div_contacts">
+        <div class="form_name">ТЕЛ</div>
+        <label for="tel"></label>
+        <input type="tel" id="tel" placeholder="+7 XXX XX XX*">
+        <div class="form_name form_name_mail">E-MAIL</div>
+        <label for="email"></label>
+        <input type="email" id="email" placeholder="Ваш Email*">
+      </div>
+
+      <div class="form_div form_div_text">
+        <div class="form_name">ДОП</div>
+        <textarea name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+        <div class="form_name_necessary">*Поля обязательны для заполнения</div>
+        <button type="button">ОТПРАВИТЬ ЗАКАЗ</button>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <div></div>
+    <div class="socials">
+      <a href=""></a>
+      <a href=""></a>
+      <a href=""></a>
+    </div>
+    <div class="dev">
+      <span>Разработано</span>
+      <a href=""></a>
+    </div>
+  </footer>
+
+</body>
+
+</html>

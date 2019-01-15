@@ -1,0 +1,468 @@
+$green-lighter: rgb(99, 209, 187);
+$green-darker: rgb(86, 195, 178);
+$add-color: #00ffff;
+$grey-button: rgb(68, 68, 68);
+$grey-background: rgb(241, 241, 241);
+
+@media (min-width: 320px) {
+  nav {
+    width: 100%;
+
+  }
+
+  .form_label {
+    background-color: $grey-background;
+    width: 100%;
+    min-height: 175px;
+    text-align: center;
+
+    span {
+      display: inline-block;
+      font-size: 1.7rem;
+      margin-top: 70px;
+      font-weight: 600;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-flow: column wrap;
+
+    span {
+      margin: 7%;
+      margin-left: 21%;
+      margin-right: 21%;
+    }
+  }
+
+  input[type="radio"] {
+    display: none;
+    margin-left: 50px;
+  }
+
+  input[type="radio"]+label[for="radio1"],
+  input[type="radio"]+label[for="radio2"] {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #808080;
+    position: relative;
+    border-radius: 50%;
+    margin-top: 20px;
+
+  }
+
+  input[type="radio"]:checked+label[for="radio1"]:after,
+  input[type="radio"]:checked+label[for="radio2"]:after {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background-color: $green-lighter;
+    z-index: 50;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+  }
+
+  label[for="radio1"],
+  label[for="radio2"] {
+    span {
+      display: inline-block;
+      min-width: 220px;
+      margin-left: 60px;
+      font-weight: 600;
+      margin-top: 7px;
+    }
+  }
+
+  .form_div {
+    width: auto;
+    // border:1px solid darkviolet;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .form_div_type {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form_name {
+    color: $green-lighter;
+    font-weight: 600;
+    font-size: 1.2rem;
+    position: relative;
+    margin-top: 20px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 80%;
+      top: 12px;
+      left: 17%;
+      height: 1px;
+      background-color: $green-lighter;
+    }
+  }
+
+  .form_div_color {
+    display: flex;
+    flex-direction: column;
+
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    input[type="checkbox"]+label {
+      width: 54px;
+      height: 54px;
+      border: 2px solid #808080;
+      position: relative;
+      margin-top: 10px;
+
+      span {
+        display: inline-block;
+        min-width: 220px;
+        margin-left: 60px;
+        font-weight: 600;
+        margin-top: 12px;
+      }
+    }
+
+    input[type="checkbox"]:checked+label:before {
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 15px;
+      top: 25px;
+      left: 15px;
+      background-color: rgb(68, 68, 68);
+      transform: rotate(-45deg);
+    }
+
+    input[type="checkbox"]:checked+label:after {
+      content: "";
+      position: absolute;
+      width: 4px;
+      height: 37px;
+      top: 8px;
+      left: 32px;
+      background-color: rgb(68, 68, 68);
+      transform: rotate(45deg);
+
+    }
+  }
+
+  .form_div_name {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      padding: 5px 0;
+      font-weight: 600;
+    }
+
+    input {
+      border: none;
+      border-bottom: 2px solid black;
+      padding: 15px 0;
+    }
+  }
+
+  .form_div_contacts {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      border: none;
+      border-bottom: 2px solid black;
+      padding: 15px 0;
+    }
+  }
+
+  .form_name_mail:after {
+    content: "";
+    position: absolute;
+    width: 72%;
+    top: 12px;
+    left: 24%;
+    height: 1px;
+    background-color: $green-lighter;
+  }
+
+  .form_div_text {
+    display: flex;
+    flex-direction: column;
+
+    textarea {
+      border: 2px solid black;
+      max-width: 100%;
+      min-height: 145px;
+      padding: 10px;
+      margin: 15px 0;
+    }
+
+    button {
+      width: 100%;
+      height: 50px;
+      border: 2px solid $grey-button;
+      background-color: white;
+      font-weight: 600;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      outline: none;
+      text-decoration: none;
+      box-shadow: 0 8px 15px $grey-button;
+      transition: .3s;
+      margin: 30px 0;
+
+      &:hover {
+        color: white;
+        background-color: $grey-button;
+        box-shadow: 0 15px 20px mix($grey-button,$green-lighter);
+        transform: translateY(-7px);
+        border: 3px solid $green-lighter;
+      }
+    }
+  }
+
+  footer {
+    display: flex;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (orientation: landscape) {
+  .form_name {
+    color: $green-lighter;
+    font-weight: 600;
+    font-size: 1.2rem;
+    position: relative;
+    margin-top: 30px;
+
+    &:after {
+      display: none;
+    }
+
+  }
+
+  input[type="radio"]+label[for="radio1"],
+  input[type="radio"]+label[for="radio2"] {
+    margin-left: 35%;
+    margin-right: 50%;
+
+  }
+
+  input[type="radio"]+label[for="radio1"] {
+    margin-top: -30px;
+  }
+
+  .form_div_type {
+    padding-bottom: 50px;
+  }
+
+  .form_div_color {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    background-color: $grey-background;
+    max-height: 310px;
+    padding-bottom: 25px;
+    overflow: hidden;
+
+    .form_name {
+      position: absolute;
+      display: block;
+      top: 5px;
+      left: 5%;
+    }
+
+    input[type="checkbox"]+label {
+      margin-top: 30px;
+      margin-right: 40px;
+    }
+  }
+
+  .form_div_name {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding-top: -20px;
+    justify-content: flex-start;
+
+    .form_name {
+      align-self: flex-start;
+    }
+
+    label {
+      align-self: flex-start;
+      margin-left: 15%;
+      margin-top: 30px;
+      margin-bottom: -40px;
+
+    }
+
+    input {
+      min-width: 70%;
+      align-self: flex-end;
+      // border:1px solid deeppink;
+    }
+  }
+
+  .form_div_contacts {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+    .form_name {
+      align-self: flex-start;
+      margin-top: 60px;
+      margin-bottom: -50px;
+    }
+
+    input {
+      min-width: 70%;
+      align-self: flex-end;
+    }
+  }
+
+  .form_div_text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+    .form_name {
+      align-self: flex-start;
+      margin-top: 70px;
+      margin-bottom: -50px;
+    }
+
+    textarea {
+      min-width: 67%;
+      align-self: flex-end;
+      box-shadow: 0 6px 15px 1px black;
+    }
+
+    .form_name_necessary {
+      align-self: flex-end;
+      margin-top: 60px;
+      margin-bottom: -70px;
+    }
+
+    button {
+      max-width: 40%;
+      left: 0;
+      align-self: flex-start;
+    }
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .form_div {
+    width: 100%;
+    // border:1px solid deeppink;
+    max-width: 1250px;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .form_name {
+    margin-left: 10%;
+  }
+
+  .form_div_color {
+    width: auto;
+    max-height: 230px;
+    // justify-content: space-between;
+    align-content: space-around;
+    padding-left: 160px;
+    padding-right: 160px;
+    // border:1px solid deeppink;
+
+    input[type="checkbox"]+label {
+      margin-top: 30px;
+    }
+
+    span {
+      padding: 0;
+    }
+
+    .form_name {
+      position: absolute;
+      display: block;
+      top: 5px;
+      left: 0;
+    }
+  }
+
+  .curvy-line {
+    z-index: 100;
+    margin-top: -33px;
+    width: 1250px;
+  }
+
+  input[type="radio"]+label[for="radio1"],
+  input[type="radio"]+label[for="radio2"] {
+    margin-left: 21%;
+  }
+
+  .form_div_name {
+    //border:1px solid lightcoral;
+
+    .form_name {
+      top: 60px;
+    }
+
+    label {
+      // margin-left: 270px;
+      display: none;
+    }
+
+    input {
+      min-width: 0;
+      width: 50%;
+      margin-right: 225px;
+    }
+  }
+
+  .form_div_contacts {
+
+    input {
+      margin-right: 225px;
+      min-width: 0;
+      width: 60%;
+    }
+  }
+
+  .form_div_text {
+    textarea {
+      margin-right: 225px;
+      min-width: 0;
+      width: 58%;
+    }
+
+    button {
+      max-width: 40%;
+      width: 250px;
+      margin-left: 22%;
+      align-self: flex-start;
+
+    }
+
+    .form_name_necessary {
+      margin-right: 225px;
+
+    }
+  }
+}
